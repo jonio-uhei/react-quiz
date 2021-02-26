@@ -4,7 +4,7 @@ import React from 'react';
         return(
             <>
                 <h1>3択クイズ</h1>
-                <h2><span>第1問</span><br></br>問題:{questions[currentQuestion].questionText}</h2>
+        <h2><span>第{currentQuestion+1}問</span><br></br>問題:{questions[currentQuestion].questionText}</h2>
                 <ul> 
                 {
                     questions[currentQuestion].answerOptions.map((answerOption,key)=>(
